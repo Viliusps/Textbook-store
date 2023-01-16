@@ -1,0 +1,48 @@
+@import "./base.css";
+#app {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    font-weight: normal;
+}
+
+a,
+.steel {
+  text-decoration: none;
+  color: hsla(209, 29%, 51%, 1);
+  transition: 0.4s;
+}
+
+button {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+  border-radius: 8px;
+  border-style: solid;
+  padding: 0.2rem 0.5rem;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(209, 29%, 51%, 0.2);
+  }
+
+  button:hover {
+    background-color: var(--color-background-soft);
+    border-color: var(--color-border-hover);
+  }
+}
+
+button:active {
+    transition: 0s;
+    background-color: var(--color-background-active);
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+}
